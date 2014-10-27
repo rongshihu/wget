@@ -8,4 +8,4 @@ script:
     - ./configure --disable-dependency-tracking && make && make syntax-check && make check && make distcheck
 before_install:
     - sudo apt-get -qq update
-    - sudo apt-get install autoconf automake autopoint libtool texinfo gettext flex lbpsl libidn2-0 libidn2-0-dev libunistring0 libunistring-dev perl openssl libwww-perl texlive
+    - sudo apt-get install autoconf automake autopoint libtool texinfo gettext flex libpsl libidn2-0 libidn2-0-dev libunistring0 libunistring-dev perl openssl libwww-perl texlive
