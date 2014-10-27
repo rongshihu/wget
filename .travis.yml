@@ -5,7 +5,7 @@ compiler:
 before_script: export CFLAGS="-g -O2 -Wall -Wextra"
 script:
     - ./bootstrap
-    - ./configure --disable-dependency-tracking && make && make syntax-check && make check && make distcheck
+    - ./configure --disable-dependency-tracking --without-libpsl && make && make syntax-check && make check && make distcheck
 before_install:
     - sudo apt-get -qq update
-    - sudo apt-get install autoconf automake autopoint libtool texinfo gettext flex libpsl0 libpsl-dev libidn2-0 libidn2-0-dev libunistring0 libunistring-dev perl openssl libwww-perl texlive
+    - sudo apt-get install autoconf automake autopoint libtool texinfo gettext flex libidn2-0 libidn2-0-dev libunistring0 libunistring-dev perl openssl libwww-perl texlive
